@@ -1,6 +1,5 @@
 *{
     margin: 0;
-    padding: 0;
     font-family: "Minecraftia";
     letter-spacing: 1px;
 }
@@ -10,11 +9,10 @@ html{
 }
 
 body{
-    background-image: url(../image/baymax.png);
+    background-image: url(../photo/baymax.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-color: #eaeaea;
     overflow-y: auto;
 }
 
@@ -62,19 +60,35 @@ ul li a:hover{
     transform: translate(-50%,10%);
 }
 
-.heading{
+.heading1{
     position: absolute;
     top: 50%;
     Left: 50%;
-    transform: translate(-50%,100%);
+    transform: translate(-120%,100%);
     font-size: 12px;
 }
 
-.sub{
+.sub1{
     position: absolute;
     top: 50%;
     Left: 50%;
-    transform: translate(-50%,180%);
+    transform: translate(-210%,180%);
+    font-size: 16px;
+}
+
+.heading2{
+    position: absolute;
+    top: 50%;
+    Left: 50%;
+    transform: translate(10%,100%);
+    font-size: 12px;
+}
+
+.sub2{
+    position: absolute;
+    top: 50%;
+    Left: 50%;
+    transform: translate(0%,180%);
     font-size: 16px;
 }
 
@@ -84,10 +98,6 @@ ul li a:hover{
     Left: 50%;
     transform: translate(-50%,-50%);
     font-size: 10px;
-}
-
-p1{
-    font-size: 12px;
 }
 
 .button{
@@ -101,14 +111,13 @@ p1{
 .btn{
     align-items: center;
     padding: 1;
-    border: 1px solid #ffffff;
+    border: 1px solid #000000;
     border-radius: 5px;
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
 }
 
 h2{
-    color: #000000;
     font-size: 16px;
     letter-spacing: 12px;
 }
@@ -116,8 +125,19 @@ h2{
 p{
     font-size: 10px;
     color: #000000;
-    background-color: #f5f5f5;
+    background-color: rgb(245 245 245 / 0.6);
     padding: 5;
+}
+
+p1{
+    font-size: 12px;
+}
+
+p2{
+    margin: 5;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
 }
 
 .container{
@@ -129,14 +149,35 @@ p{
 
 .columns{
     margin: 0 10 10;
+    border-radius: 10px;
+    border: 1px solid #000000;
     background: rgb(255 255 255 / 30%);
-    border: 1px solid #ffffff;
-    border-radius: 5px;
     flex-basis: 25%;
 }
 
 .card{
+    padding: 5;
+}
+
+.data {
+    font-size: 25px;
+    letter-spacing: 12px;
+    text-align: center;
     padding: 10;
+    color: #ffffff;
+}
+
+.img{
+    position: absolute;
+    top: 50%;
+    Left: 50%;
+    transform: translate(-50%,-120%);
+}
+
+aa{
+    position: relative;
+    left: 0px;
+    top: 360px;
 }
 
 #particles-js{
@@ -148,10 +189,47 @@ p{
     left: 0
 }
 
-.data {
-    font-size: 25px;
+.tab{
+    margin: 10;
+    float: left;
+    background-color: rgb(255 255 255 / 30%);
+    width: 25%;
+}
+  
+.tab button{
+    margin: 10;
     letter-spacing: 12px;
-    text-align: center;
-    color: #ffffff;
+    display: block;
+    background-color: inherit;
     padding: 10;
+    width: 94%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.tab button:hover{
+    background-color: #fff;
+}
+  
+.tab button.active{
+    background-color: rgb(245 245 245 / 0.7);
+}
+  
+.tabcontent{
+    margin: 5;
+    float: left;
+    padding: 10;
+    width: 71%;
+    border-left: none;
+}
+
+#clock{
+    position: absolute;
+    top: 50%;
+    Left: 50%;
+    transform: translate(-50%,-150%);
+    font-size: 16px;
 }
