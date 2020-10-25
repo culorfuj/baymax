@@ -1,40 +1,63 @@
 <html>
 <head>
-    <title>Baymax - Discord</title>
+    <title>baymax</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <div id="particles-js"></div>
     <script type="text/javascript" src="particles.js"></script>
     <script type="text/javascript" src="app.js"></script>
-    <link rel="shortcut icon" type="image/jpg" href="../baymax/photo/baymax.jpg">
+    <link rel="shortcut icon" type="image/png" href="../baymax/photo/baymax.png">
 </head>
-<body>
-    <header>
+
+<script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('clock').innerHTML =
+      h + ":" + m + ":" + s;
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};
+      return i;
+    }
+    </script>
+    
+<body onload="startTime()">
+    <div id="clock"></div>
+        <header>
         <div class="main">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="commands.html">Commands</a></li>
-                <li><a href="https://discord.gg/WFNJqQE">Community</a></li>
-                <li><a herf="https://top.gg/bot/741098108221653113">upvote baymax</a></li>
+                <li><a href="home.html">home</a></li>
+                <li><a href="commands.html">commands</a></li>
+                <li><a href="https://discord.gg/D5jH2Eh">community</a></li>
+                <li><a href="https://top.gg/bot/741098108221653113">upvote baymax</a></li>
             </ul>
         </div>
-
-        <div class="button">
-            <a href="https://discord.com/oauth2/authorize?client_id=741098108221653113&scope=bot&permissions=8" class="btn">click me to invite baymax</a>
+        <div class="title">
+            <h1>Baymax</h1>
+        </div>
+        <div class="subtitle">
+            <p1>An inflatable multipurpose robot</p1>
         </div>
     </header>
-</body>
-
-<div class="title">
-    <h1>Baymax</h1>
-</div>
-<div class="subtitle">
-    <p1>An inflatable multipurpose robot</p1>
-</div>
-<div class="info">
-    <div>
-        <p1 class="heading">Uptime</p1>
-        <p1 class="sub">99.99%</p1>
+    <div class="guilds">
+        <div>
+            <p1 class="heading1">GUILDS</p1>
+            <p1 class="sub1">19</p1>
+        </div>
+    <div class="info">
+        <div>
+            <p1 class="heading2">UPTIME</p1>
+            <p1 class="sub2">99.99%</p1>
+        </div>
+    <div class="button">
+        <a href="https://discord.com/oauth2/authorize?client_id=741098108221653113&scope=bot&permissions=8" class="btn">click me to invite baymax</a>
     </div>
-</div>
-
+    </div>
+    <p2>© 2020 copyright of Baymax. all rights reserved</p2>
+</body>
 </html>
