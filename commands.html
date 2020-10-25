@@ -1,22 +1,22 @@
+<html>
 <head>
-    <title>commands</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>baymax</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="../baymax/photo/baymax.png">
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
     <div id="particles-js"></div>
     <script type="text/javascript" src="particles.js"></script>
     <script type="text/javascript" src="app.js"></script>
-    <link rel="shortcut icon" type="image/jpg" href="../baymax/photo/baymax.jpg">
-    <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=zFhfksjf_mY&name=Lazy+Sunday+lofi+hip+hop+chill+beats#gsc.tab=0" frameborder="0" allowfullscreen></iframe>
-    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 </head>
 
 <body>
     <header>
         <div class="main">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="commands.html">Commands</a></li>
-                <li><a href="https://discord.gg/WFNJqQE">Community</a></li>
-                <li><a herf="https://top.gg/bot/741098108221653113">upvote baymax</a></li>
+                <li><a href="home.html">home</a></li>
+                <li><a href="commands.html">commands</a></li>
+                <li><a href="https://discord.gg/D5jH2Eh">community</a></li>
+                <li><a href="https://top.gg/bot/741098108221653113">upvote baymax</a></li>
             </ul>
         </div>
     </header>
@@ -39,113 +39,93 @@
 
         </script>
     </header>
-
-    
-    <style>
-        @media screen and (max-width: 768px){
-          .container{
-            flex-direction: column;
-          }
-        }
-    
-    </style>
-    
     <body>
-    <div class="container">
-    <div class="columns">
-    <div class="card">
-    <h2>UTILITY</h2>
-    <p>b.about</p>
-    <p>displays information about Baymax</p><hr>
-    <p>b.command</p>
-    <p>provides a list of commands</p><hr>
-    <p>b.help</p>
-    <p>shows all commands</p><hr>
-    <p>b.list</p>
-    <p>responds with a list of commands</p><br>
-    <h2>MUSIC</h2>
-    <p>b.disconnect</p>
-    <p>disconnects Baymax from the voice channel</p><hr>
-    <p>b.play</p>
-    <p>plays the music</p><hr>
-    <p>b.skip</p>
-    <p>skips the music playing</p><br>
-    </div>
-    </div>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'UTILITY')" id="defaultOpen">UTILITY</button>
+            <button class="tablinks" onclick="openCity(event, 'MODERATION')">MODERATION</button>
+            <button class="tablinks" onclick="openCity(event, 'FUN')">FUN</button>
+            <button class="tablinks" onclick="openCity(event, 'MUSIC')">MUSIC</button>
+            <button class="tablinks" onclick="openCity(event, 'IMAGE')">IMAGE</button>
+            <button class="tablinks" onclick="openCity(event, 'REACTION')">REACTION</button>
+            <button class="tablinks" onclick="openCity(event, 'MISCELLANEOUS')">MISCELLANEOUS</button>
+        </div>
+          
+          <div id="UTILITY" class="tabcontent">
+            <div class="card"><p>b.about</p><hr><p>displays information about Baymax</p></div>
+            <div class="card"><p>b.command</p><hr><p>provides a list of commands</p></div>
+            <div class="card"><p>b.help</p><hr><p>shows all commands</p></div>
+            <div class="card"><p>b.invite</p><hr><p>responds an invite link</p></div>
+            <div class="card"><p>b.list</p><hr><p>responds with a list of commands</p></div>
+            <div class="card"><p>b.support</p><hr><p>responds an invite to the support server</p></div>
+            <div class="card"><p>b.vote</p><hr><p>responds a link to upvote Baymax</p></div>
+          </div>
+          
+          <div id="MODERATION" class="tabcontent">
+            <div class="card"><p>b.ban</p><hr><p>bans the member you tag if you're allowed to ban them</p></div>
+            <div class="card"><p>b.kick</p><hr><p>kicks the member you tag if you're allowed to kick them</p></div>
+          </div>
+          
+          <div id="FUN" class="tabcontent">
+            <div class="card"><p>b.bear/bear2</p><hr><p>provides a bear plushie</p></div>
+            <div class="card"><p>b.beatbox</p><hr><p>responds beatbox <i>sounds</i></p></div>
+            <div class="card"><p>b.care</p><hr><p>rate your pain</p></div>
+            <div class="card"><p>b.cookie</p><hr><p>freshly baked cookie from the oven</p></div>
+            <div class="card"><p>b.gift</p><hr><p>sends a gift</p></div>
+            <div class="card"><p>b.hello</p><hr><p>responds "responds "hello. i am Baymax, your personal healthcare companion"</p></div>
+            <div class="card"><p>b.imposter</p><hr><p><i>who the imposter is</i> text</p></div>
+            <div class="card"><p>b.lollipop</p><hr><p>provides a lollipop</p></div>
+            <div class="card"><p>b.pop</p><hr><p>digital bubble wrap text</p></div>
+            <div class="card"><p>b.say</p><hr><p>Baymax will say what you say and delete your message</p></div>
+            <div class="card"><p>b.space</p><hr><p>responds space text</p></div>
+          </div>
 
-    <div class="columns">
-    <div class="card">
-    <h2>FUN</h2>
-    <p>b.bear/bear2</p>
-    <p>provides a bear plushie</p><hr>
-    <p>b.beatbox</p>
-    <p>responds with beatbox sounds</p><hr>
-    <p>b.care</p>
-    <p>sends a pain scale</p><hr>
-    <p>cookie</p>
-    <p>bake a cookie</p><hr>
-    <p>b.gift</p>
-    <p>sends a gift</p><hr>
-    <p>b.hello</p>
-    <p>responds with hello</p><hr>
-    <p>b.imposter</p>
-    <p>shows a text of who the imposter is</p><hr>
-    <p>lollipop</p>
-    <p>provides a lollipop</p><hr>
-    <p>pop</p>
-    <p>shows a bubble wrap text</p><hr>
-    <p>say</p>
-    <p>baymax will say what you say and remove your message</p><hr>
-    <p>b.space</p>
-    <p>shows a space text</p>
-    </div>
-    </div>
+          <div id="MUSIC" class="tabcontent">
+            <div class="card"><p>b.disconnect</p><hr><p>disconnects Baymax from the voice channel</p></div>
+            <div class="card"><p>b.play (song/yt url here)</p><hr><p>plays the music</p></div>
+            <div class="card"><p>b.skip</p><hr><p>skips the music playing</p></div>
+          </div>
 
-    <div class="columns">
-    <div class="card">
-    <h2>REACTION</h2>
-    <p>b.bonk</p>
-    <p>bonks the user you tag</p><hr>
-    <p>b.cheer</p>
-    <p>cheers for something</p><hr>
-    <p>b.cry</p>
-    <p>sends a crying reaction</p><hr>
-    <p>b.fb</p>
-    <p>fist bumps the user you tag</p><hr>
-    <p>b.hand</p>
-    <p>throws tiny hands at the user you tag cuz why not</p><hr>
-    <p>b.hug</p>
-    <p>hugs the user you tag</p><hr>
-    <p>b.kick</p>
-    <p>kicks the user you tag</p><hr>
-    <p>b.poke</p>
-    <p>pokes the user you tag</p><hr>
-    <p>b.pspsps</p>
-    <p>Pspspspsps the user you tag</p><hr>
-    <p>b.slap</p>
-    <p>slaps the user you tag</p>
-    </div>
-    </div>
-    
-    <div class="columns">
-    <div class="card">
-    <h2>MISCELLANEOUS</h2>
-    <p>"OW"</p>
-    <p>Baymax replies with "i heard the sound of distress. what seems to be the trouble"</p><hr>
-    <p>"ow"</p>
-    <p>Baymax replies with "i heard the sound of distress. what seems to be the trouble"</p><hr>
-    <p>"POG"</p>
-    <p>Baymax replies with "POG"</p><hr>
-    <p>"POGGERS"</p>
-    <p>Baymax replies with "POGGERS"</p><hr>
-    <p>"POGCHAMP"</p>
-    <p>Baymax replies with "POGCHAMP"</p><br>
-    <h2>IMAGE</h2>
-    <p>b.cat</p>
-    <p>posts an image or gif of a cat</p><hr>
-    <p>b.dog</p>
-    <p>posts an image or gif of a dog</p>
-    </div>
+          <div id="IMAGE" class="tabcontent">
+            <div class="card"><p>b.cat</p><hr><p>posts an image or gif of a cat</p></div>
+            <div class="card"><p>b.dog</p><hr><p>posts an image or gif of a dog</p></div>
+          </div>
+
+          <div id="REACTION" class="tabcontent">
+            <div class="card"><p>b.bonk</p><hr><p>bonks the user you tag</p></div>
+            <div class="card"><p>b.cheer</p><hr><p>cheers for something</p></div>
+            <div class="card"><p>b.cry</p><hr><p>sends a crying reaction</p></div>
+            <div class="card"><p>b.fb</p><hr><p>fist bumps the user you tag</p></div>
+            <div class="card"><p>b.hand</p><hr><p>throws tiny hands at the user you tag</p></div>
+            <div class="card"><p>b.hug</p><hr><p>hugs the user you tag</p></div>
+            <div class="card"><p>b.poke</p><hr><p>pokes the user you tag</p></div>
+            <div class="card"><p>b.pspsps</p><hr><p>pspspspsps the user you tag</p></div>
+            <div class="card"><p>b.scream</p><hr><p>responds <b>intensify screaming</b></p></div>
+          </div>
+
+          <div id="MISCELLANEOUS" class="tabcontent">
+            <div class="card"><p>"OW"</p><hr><p>Baymax replies with "i heard the sound of distress. what seems to be the trouble"</p></div>
+            <div class="card"><p>"ow"</p><hr><p>Baymax replies with "i heard the sound of distress. what seems to be the trouble"</p></div>
+            <div class="card"><p>"POG"</p><hr><p>Baymax replies with "<b>POG</b>"</p></div>
+            <div class="card"><p>"POGGERS"</p><hr><p>Baymax replies with "<b>POGGERS</b>"</p></div>
+            <div class="card"><p>"POGCHAMP"</p><hr><p>Baymax replies with "<b>POGCHAMP</b>"</p></div>
+          </div>
+          
+          <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          document.getElementById("defaultOpen").click();
+          </script>
     </body>
 </head>
 </html>
