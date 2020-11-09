@@ -2,11 +2,7 @@
 <head>
     <title>baymax</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="../baymax/photo/baymax.png">
-    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
-    <div id="particles-js"></div>
-    <script type="text/javascript" src="particles.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <link rel="shortcut icon" type="image/png" href="./photo/baymax icon.png">
 </head>
 
 <body>
@@ -23,94 +19,257 @@
 </body>
 
 <head>
-    <header>
-        <div class="a">
-            <div class="data">commands</div>
-        </div>
-        <script type="text/javascript">
-
-        const text = baffle(".data");
-        text.set({
-            characters : '█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░>',
-            speed: 100
-        });
-        text.start();
-        text.reveal(4000);
-
-        </script>
-    </header>
+    <h1 style="position: absolute; Left: 3%; top: 8%; letter-spacing: 10;">commands</h1>
     <body>
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'UTILITY')" id="defaultOpen">UTILITY</button>
-            <button class="tablinks" onclick="openCity(event, 'MODERATION')">MODERATION</button>
-            <button class="tablinks" onclick="openCity(event, 'FUN')">FUN</button>
-            <button class="tablinks" onclick="openCity(event, 'MUSIC')">MUSIC</button>
-            <button class="tablinks" onclick="openCity(event, 'IMAGE')">IMAGE</button>
-            <button class="tablinks" onclick="openCity(event, 'REACTION')">REACTION</button>
-            <button class="tablinks" onclick="openCity(event, 'MISCELLANEOUS')">MISCELLANEOUS</button>
+            <button class="tablinks" onclick="openCity(event, 'utility')" id="defaultOpen">utility</button>
+            <button class="tablinks" onclick="openCity(event, 'moderation')">moderation</button>
+            <button class="tablinks" onclick="openCity(event, 'fun')">fun</button>
+            <button class="tablinks" onclick="openCity(event, 'image')">image</button>
+            <button class="tablinks" onclick="openCity(event, 'reaction')">reaction</button>
+            <button class="tablinks" onclick="openCity(event, 'miscellaneous')">miscellaneous</button>
         </div>
           
-          <div id="UTILITY" class="tabcontent">
-            <div class="card"><p>b.about</p><hr><p>displays information about Baymax</p></div>
-            <div class="card"><p>b.command</p><hr><p>provides a list of commands</p></div>
-            <div class="card"><p>b.help</p><hr><p>shows all commands</p></div>
-            <div class="card"><p>b.invite</p><hr><p>responds an invite link</p></div>
-            <div class="card"><p>b.list</p><hr><p>responds with a list of commands</p></div>
-            <div class="card"><p>b.support</p><hr><p>responds an invite to the support server</p></div>
-            <div class="card"><p>b.vote</p><hr><p>responds a link to upvote Baymax</p></div>
+          <div id="utility" class="tabcontent">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.about</mark></h3>
+                <p class="card-text">displays information about Baymax</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.command</mark></h3>
+                <p class="card-text">provides a list of commands</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.help</mark></h3>
+                <p class="card-text">shows all commands</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.invite</mark></h3>
+                <p class="card-text">responds an invite link</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.list</mark></h3>
+                <p class="card-text">responds with a list of commands</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.support</mark></h3>
+                <p class="card-text">responds an invite to the support server</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.vote</mark></h3>
+                <p class="card-text">responds a link to upvote Baymax</p></div>
+            </div>
           </div>
           
-          <div id="MODERATION" class="tabcontent">
-            <div class="card"><p>b.ban</p><hr><p>bans the member you tag if you're allowed to ban them</p></div>
-            <div class="card"><p>b.kick</p><hr><p>kicks the member you tag if you're allowed to kick them</p></div>
+          <div id="moderation" class="tabcontent">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.ban</mark></h3>
+                <span class="tag" style="position: absolute; right: 160; top: 55; font-size: 14px; background-color: #23d160; color: #fff;">BAN_MEMBERS</span>
+                <span class="tag2" style="position: absolute; right: 35; top: 55; font-size: 14px; background-color: #3273dc; color: #fff;">SERVER ONLY</span>
+                <p class="card-text">bans the member you tag if you're allowed to ban them</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.kick</mark></h3>
+                <span class="tag" style="position: absolute; right: 160; top: 120; font-size: 14px; background-color: #23d160; color: #fff;">BAN_MEMBERS</span>
+                <span class="tag2" style="position: absolute; right: 35; top: 120; font-size: 14px; background-color: #3273dc; color: #fff;">SERVER ONLY</span>
+                <p class="card-text">kicks the member you tag if you're allowed to kick them</p></div>
+            </div>
           </div>
           
-          <div id="FUN" class="tabcontent">
-            <div class="card"><p>b.bear/bear2</p><hr><p>provides a bear plushie</p></div>
-            <div class="card"><p>b.beatbox</p><hr><p>responds beatbox <i>sounds</i></p></div>
-            <div class="card"><p>b.care</p><hr><p>rate your pain</p></div>
-            <div class="card"><p>b.cookie</p><hr><p>freshly baked cookie from the oven</p></div>
-            <div class="card"><p>b.gift</p><hr><p>sends a gift</p></div>
-            <div class="card"><p>b.hello</p><hr><p>responds "responds "hello. i am Baymax, your personal healthcare companion"</p></div>
-            <div class="card"><p>b.imposter</p><hr><p><i>who the imposter is</i> text</p></div>
-            <div class="card"><p>b.lollipop</p><hr><p>provides a lollipop</p></div>
-            <div class="card"><p>b.pop</p><hr><p>digital bubble wrap text</p></div>
-            <div class="card"><p>b.say</p><hr><p>Baymax will say what you say and delete your message</p></div>
-            <div class="card"><p>b.space</p><hr><p>responds space text</p></div>
-            <div class="card"><p>b.tag</p><hr><p>game of tag</p></div>
+          <div id="fun" class="tabcontent">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.bear/bear2</mark></h3>
+                <p class="card-text">provides a bear plushie</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.beatbox</mark></h3>
+                <p class="card-text">responds beatbox <i>sounds</i></p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.boop</mark></h3>
+                <p class="card-text">allows you to boop someone</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>"boop me"</mark></h3>
+                <p class="card-text">boops yourself</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.care</mark></h3>
+                <p class="card-text">rate your pain</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.cookie</mark></h3>
+                <p class="card-text">freshly baked cookie from the oven</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.gift</mark></h3>
+                <p class="card-text">sends a gift</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.hello</mark></h3>
+                <p class="card-text">responds "hello. i am Baymax, your personal healthcare companion"</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.imposter</mark></h3>
+                <p class="card-text"><i>who the imposter is</i> text</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.kill/"kill me"</mark></h3>
+                <p class="card-text">kills nothing</div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.kudos</mark></h3>
+                <p class="card-text">Baymax compliments you <img src="./photo/smile.png" alt="smile" style="position: sticky; width: 20;"></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.lollipop</mark></h3>
+                <p class="card-text">provides a lollipop</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.pop</mark></h3>
+                <p class="card-text">digital bubble wrap text</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.say</mark></h3>
+                <p class="card-text">Baymax will say what you say and delete your message</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.shoot</mark></h3>
+                <p class="card-text">allows you to shoot someone</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.space</mark></h3>
+                <p class="card-text">responds space text</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.stab</mark></h3>
+                <p class="card-text">allows you to stab someone</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.tag</mark></h3>
+                <p class="card-text">game of tag</p></div>
+            </div>
           </div>
 
-          <div id="MUSIC" class="tabcontent">
-            <div class="card"><p>b.disconnect</p><hr><p>disconnects Baymax from the voice channel</p></div>
-            <div class="card"><p>b.play (song/yt url here)</p><hr><p>plays the music</p></div>
-            <div class="card"><p>b.skip</p><hr><p>skips the music playing</p></div>
+          <div id="image" class="tabcontent">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.cat</mark></h3>
+                <p class="card-text">posts an image or gif of a cat</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.dog</mark></h3>
+                <p class="card-text">posts an image or gif of a dog</p></div>
+            </div>
           </div>
 
-          <div id="IMAGE" class="tabcontent">
-            <div class="card"><p>b.cat</p><hr><p>posts an image or gif of a cat</p></div>
-            <div class="card"><p>b.dog</p><hr><p>posts an image or gif of a dog</p></div>
+          <div id="reaction" class="tabcontent">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.bonk</mark></h3>
+                <p class="card-text">bonks the user you tag</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.cheer</mark></h3>
+                <p class="card-text">cheers for something</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.cry</mark></h3>
+                <p class="card-text">sends a crying reaction</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.fb</mark></h3>
+                <p class="card-text">fist bumps the user you tag</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.hand</mark></h3>
+                <p class="card-text">throws tiny hands at the user you tag</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.hug</mark></h3>
+                <p class="card-text">hugs the user you tag</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.poke</mark></h3>
+                <p class="card-text">pokes the user you tag</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.pspsps</mark></h3>
+                <p class="card-text">pspspspsps the user you tag</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.scream</mark></h3>
+                <p class="card-text">responds <b>intensify screaming</b></p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>b.wave</mark></h3>
+                <p class="card-text">waves the user you tag</p></div>
+            </div>
           </div>
 
-          <div id="REACTION" class="tabcontent">
-            <div class="card"><p>b.bonk</p><hr><p>bonks the user you tag</p></div>
-            <div class="card"><p>b.cheer</p><hr><p>cheers for something</p></div>
-            <div class="card"><p>b.cry</p><hr><p>sends a crying reaction</p></div>
-            <div class="card"><p>b.fb</p><hr><p>fist bumps the user you tag</p></div>
-            <div class="card"><p>b.hand</p><hr><p>throws tiny hands at the user you tag</p></div>
-            <div class="card"><p>b.hug</p><hr><p>hugs the user you tag</p></div>
-            <div class="card"><p>b.poke</p><hr><p>pokes the user you tag</p></div>
-            <div class="card"><p>b.pspsps</p><hr><p>pspspspsps the user you tag</p></div>
-            <div class="card"><p>b.scream</p><hr><p>responds <b>intensify screaming</b></p></div>
-            <div class="card"><p>b.wave</p><hr><p>waves the user you tag</p></div>
-          </div>
-
-          <div id="MISCELLANEOUS" class="tabcontent">
-            <div class="card"><p>b.24/7</p><hr><p>reponds a list of hotlines if you need help</p></div>
-            <div class="card"><p>"OW"</p><hr><p>Baymax replies with "i heard the sound of distress. what seems to be the trouble"</p></div>
-            <div class="card"><p>"ow"</p><hr><p>Baymax replies with "i heard the sound of distress. what seems to be the trouble"</p></div>
-            <div class="card"><p>"POG"</p><hr><p>Baymax replies with "<b>POG</b>"</p></div>
-            <div class="card"><p>"POGGERS"</p><hr><p>Baymax replies with "<b>POGGERS</b>"</p></div>
-            <div class="card"><p>"POGCHAMP"</p><hr><p>Baymax replies with "<b>POGCHAMP</b>"</p></div>
+          <div id="miscellaneous" class="tabcontent">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>"OW"</mark></h3>
+                <p class="card-text">Baymax replies with "i heard the sound of distress. what seems to be the trouble"</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>"ow"</mark></h3>
+                <p class="card-text">Baymax replies with "i heard the sound of distress. what seems to be the trouble"</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>"POG"</mark></h3>
+                <p class="card-text">Baymax replies with "<b>POG</b>"</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>"POGCHAMP"</mark></h3>
+                <p class="card-text">Baymax replies with "<b>POGCHAMP</b>"</p></div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><mark>"POGGERS"</mark></h3>
+                <p class="card-text">Baymax replies with "<b>POGGERS</b>"</p></div>
+            </div>
           </div>
           
           <script>
